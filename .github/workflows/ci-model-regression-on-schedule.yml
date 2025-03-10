@@ -517,7 +517,7 @@ jobs:
           python-version: '3.10'
 
       - name: Get reports
-        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a
+        uses: actions/download-artifact@cc203385981b70ca67e1cc392babf9cc229d5806
         with:
           path: reports/
 
@@ -574,7 +574,7 @@ jobs:
           unzip report.json.zip && mv report.json report_main.json
 
       - name: Download the report
-        uses: actions/download-artifact@9bc31d5ccc31df68ecc42ccf4149144866c47d8a
+        uses: actions/download-artifact@cc203385981b70ca67e1cc392babf9cc229d5806
         with:
           name: report.json
 
