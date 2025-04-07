@@ -577,7 +577,7 @@ jobs:
           fetch-depth: 0
 
       - name: Analyse code with SonarCloud
-        uses: sonarsource/sonarcloud-github-action@5875562561d22a34be0c657405578705a169af6c
+        uses: sonarsource/sonarcloud-github-action@ffc3010689be73b8e5ae0c57ce35968afd7909e8
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
