@@ -865,7 +865,7 @@ jobs:
           echo "to_ts=$TIME_UNIX_NOW" >> $GITHUB_OUTPUT
 
       - name: Publish results as a PR comment
-        uses: marocchino/sticky-pull-request-comment@f6a2580ed520ae15da6076e7410b088d1c5dddd9 # v2.7.0
+        uses: marocchino/sticky-pull-request-comment@67d0dec7b07ed060a405f9b2a64b8ab319fdd7db # v2.9.2
         if: ${{ always() }}
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
