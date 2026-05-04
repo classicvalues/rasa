@@ -62,7 +62,7 @@ jobs:
       - name: Create new branch 🐣
         id: create-new-branch
         if: always()
-        uses: peterjgrainger/action-create-branch@64aa569aea81305305c6e92bd236d8c427debff8
+        uses: peterjgrainger/action-create-branch@4b81ce657e255acd677cc6c55c9c763654be3aef
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
