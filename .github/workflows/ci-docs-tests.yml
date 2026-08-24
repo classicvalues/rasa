@@ -21,7 +21,7 @@ jobs:
       docs: ${{ steps.filter.outputs.docs }}
     steps:
       - uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c
-      - uses: dorny/paths-filter@4512585405083f25c027a35db413c2b3b9006d50
+      - uses: dorny/paths-filter@ceb8a2b8f2d89434be7ff52d3de7ec3738c5cc9d
         id: filter
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
