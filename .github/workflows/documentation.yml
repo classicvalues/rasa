@@ -125,7 +125,7 @@ jobs:
         shell: bash
 
       - name: Install poetry 🦄
-        uses: Gr1N/setup-poetry@15821dc8a61bc630db542ae4baf6a7c19a994844 # v8
+        uses: Gr1N/setup-poetry@a05ec55cc26a7270e246efc79ee3ce1bcd6814a0 # v10
         with:
           poetry-version: ${{ env.POETRY_VERSION }}
 
@@ -219,7 +219,7 @@ jobs:
 
       - name: Install poetry 🦄
         if: needs.changes.outputs.docs == 'true'
-        uses: Gr1N/setup-poetry@15821dc8a61bc630db542ae4baf6a7c19a994844 # v8
+        uses: Gr1N/setup-poetry@a05ec55cc26a7270e246efc79ee3ce1bcd6814a0 # v10
         with:
           poetry-version: ${{ env.POETRY_VERSION }}
 
